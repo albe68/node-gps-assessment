@@ -1,4 +1,4 @@
-# Node.js Express Application for PVT Data Processing
+# Node.js Application for PVT Data Processing
 
 ## Overview
 
@@ -24,7 +24,7 @@ Before running this application, make sure you have the following installed:
 
 ```
 git clone https://github.com/albe68/node-gps-assessment.git
-cd your-repository-folder
+cd node-gps-assessment
 ```
 
 2. **Install Dependencies**
@@ -83,15 +83,16 @@ npm run dev
 
   ```
   {
-    "error": "Error message detailing the cause of failure"
+    "error": "Data retrieval failed"
   }
   ```
 
 ## Project Structure
 
 - `src/`: Source code directory.
-- `express.js`: Main application file.
-- `controllers/`: Contains controller files (e.g., PVTDataController.js for handling PVT data processing logic).
+- `src/index.js`: Main application file.
+- `src/controller/`: Contains controller files (e.g., PVTDataController.js for handling PVT data processing logic).
+- `src/decodePacketHelper.js`: Contains Helper functions for PVTDataController.js
 - `.env`: Environment variable file.
 - `ecosystem.config.js`: PM2 configuration file.
 - `package.json`: Defines the project dependencies and scripts.

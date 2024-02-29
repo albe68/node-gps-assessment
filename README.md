@@ -23,7 +23,7 @@ Before running this application, make sure you have the following installed:
 1. **Clone the Repository**
 
 ```
-git clone https://github.com/your-repository.git
+git clone https://github.com/albe68/node-gps-assessment.git
 cd your-repository-folder
 ```
 

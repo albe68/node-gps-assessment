@@ -1,9 +1,7 @@
 const axios = require("axios");
-
-// Define the URL of your server
-const SERVER_URL = "http://localhost:3000/api/v1/pvt-data/submit"; // Assuming the server is running on localhost:3000
-
-// Example packet data
+const config = require("./config");
+const SERVER_URL = `http://localhost:${config}/api/v1/pvt-data/submit`;
+// Sample packet data
 const packetData = {
   packetType: "NR",
   currentDate: "14122022",

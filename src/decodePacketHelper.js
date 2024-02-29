@@ -9,7 +9,7 @@ function decodePktHelper(packet) {
     // Extract information
     const information = {
       packetType: fields[3], //4
-      currentDate: formatDate(fields[9], config.DATE_FORMAT), // Assuming date is in YYYYMMDD format
+      currentDate: formatDate(fields[9], config.DATE_FORMAT), 
       currentTime: formatTime(fields[10].split(" ")[0], config.TIME_FORMAT), // Extract time before whitespace
       lat: parseFloat(fields[11]), 
       latDirection: fields[12], 
@@ -19,7 +19,6 @@ function decodePktHelper(packet) {
       ignitionStatus: fields[22],
       mainInputVoltage: parseFloat(fields[24]), 
     };
-    console.log("returned")
     return information;
   }
   function formatDate(dateString, format) {

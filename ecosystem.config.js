@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: "server_express",
-      script: "src/express.js", // Entry point of application
+      name: "server_instance",
+      script: "src/index.js", // Entry point of application
       instances: "1", // Run as many instances as the available CPU cores
       autorestart: true, // Restart the application if it crashes
       watch: true, // Disable file watching (change to true for live changes)
